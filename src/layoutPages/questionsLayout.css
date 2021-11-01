@@ -1,0 +1,87 @@
+.questionForm {
+  width: 50%;
+  height: fit-content;
+  padding: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  color: rgb(88, 71, 48);
+  box-shadow: 0px 0px 10px rgb(91, 79, 66);
+  background-image: linear-gradient(to right, bisque, rgb(191, 157, 108));
+}
+.questionScreen {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.questionScreen .questionNum_scoreBoard {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.questionScreen .question {
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 0px 4px brown;
+}
+.answerBtns button {
+  border: 1px solid red;
+  width: 100%;
+  height: fit-content;
+  border-radius: 8px;
+  border: 0;
+  outline: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  font-size: 15px;
+  text-transform: capitalize;
+  background: rgb(75, 78, 24);
+
+  border: 5px dotted #fff;
+  color: goldenrod;
+  text-shadow: 0px 0px 5px black;
+
+  align-self: center;
+  margin: 0.5rem auto;
+}
+.questionNum_scoreBoard {
+  font-weight: bold;
+}
+.currentQuestion,
+.correctAns {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 25px;
+  text-shadow: 0px 0px 4px brown;
+}
+
+.answerBtns button:hover {
+  transition: background 0.4s ease-in-out, border 0.4s ease-in-out,
+    box-shadow 0.4s ease-in;
+  background: inherit;
+
+  color: goldenrod;
+  box-shadow: 0px 0px 10px rgb(238, 171, 95);
+  align-self: center;
+  margin: 0.5rem auto;
+}
+
+@media screen and (max-width: 768px) {
+  .questionForm {
+    width: 90%;
+  }
+}
+/* @media screen and (min-width: 1100px) {
+  .questionForm {
+    width: 50%;
+  }
+} */

@@ -1,0 +1,94 @@
+.resultWrapper {
+  width: 50%;
+  height: fit-content;
+  padding: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  color: rgb(88, 71, 48);
+  box-shadow: 0px 0px 10px rgb(91, 79, 66);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-image: linear-gradient(to right, bisque, rgb(191, 157, 108));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.resultWrapper > h1 {
+  margin: 0 auto;
+  padding: 0;
+}
+.resultWrapper > h4 {
+  text-align: start;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 0px 4px brown;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+.resultWrapper > ul {
+  list-style-type: disc;
+  font-size: 20px;
+}
+.resultWrapper > ul > li > span {
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 0px 4px brown;
+}
+button {
+  border: 1px solid red;
+  width: 100%;
+  height: fit-content;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  border: 0;
+  outline: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  font-size: 15px;
+  text-transform: capitalize;
+  background: rgb(75, 78, 24);
+
+  border: 5px dotted #fff;
+  color: goldenrod;
+  text-shadow: 0px 0px 5px black;
+
+  align-self: center;
+  margin: 0.5rem auto;
+}
+button:hover {
+  transition: background 0.4s ease-in-out, border 0.4s ease-in-out,
+    box-shadow 0.4s ease-in;
+  background: inherit;
+
+  color: goldenrod;
+  box-shadow: 0px 0px 10px rgb(238, 171, 95);
+  align-self: center;
+  margin: 0.5rem auto;
+}
+
+@media screen and (max-width: 768px) {
+  .resultWrapper {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .resultWrapper {
+    max-width: 50%;
+  }
+}
+/* @media screen and (m-width: 1100px) {
+  .resultWrapper {
+    width: 80%;
+  }
+} */
